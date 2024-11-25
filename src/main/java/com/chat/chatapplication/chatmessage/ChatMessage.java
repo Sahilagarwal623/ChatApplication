@@ -1,5 +1,4 @@
-package com.chat.chatapplication;
-
+package com.chat.chatapplication.chatmessage;
 import lombok.*;
 
 @NoArgsConstructor
@@ -11,4 +10,6 @@ public class ChatMessage {
     private String content;
     private String sender;
     private MessageType type;
+    private String messageTime;
+    private String roomId;
 }

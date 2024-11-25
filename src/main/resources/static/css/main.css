@@ -207,17 +207,24 @@ button.accent {
     color: #43464b;
 }
 
-#messageForm .input-group input {
-    float: left;
-    width: calc(100% - 85px);
+#messageForm .input-group {
+    display: flex;
+    align-items: center; /* Aligns button and textarea vertically */
+}
+
+#messageForm .input-group textarea {
+    flex: 1; /* Automatically takes up remaining space */
+    height: 38px; /* Match button height */
+    resize: none; /* Prevents resizing if desired */
+    box-sizing: border-box; /* Includes padding and border in width calculation */
 }
 
 #messageForm .input-group button {
-    float: left;
     width: 80px;
     height: 38px;
     margin-left: 5px;
 }
+
 
 .chat-header {
     text-align: center;
